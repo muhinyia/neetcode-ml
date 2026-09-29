@@ -6,6 +6,8 @@ class Solution:
         # Round final answer to 5 decimal places
         if iterations<1:
             return round(init, 5)
-        for i in range(iterations):
-            init -=  (learning_rate * (2*init))
+        while iterations!=0:
+            deriv = 2 * init
+            init = init - (learning_rate * deriv)
+            iterations -=1
         return round(init, 5)
