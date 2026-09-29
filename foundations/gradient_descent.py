@@ -7,6 +7,5 @@ class Solution:
         if iterations<1:
             return round(init, 5)
         for i in range(iterations):
-            f_x = 2 * init
-            init -=  (learning_rate * f_x)
+            init -=  (learning_rate * (2*init))
         return round(init, 5)
