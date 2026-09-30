@@ -12,7 +12,5 @@ class Solution:
         z_sum = np.sum(z_exp)
 
         out = ((z_exp)) / (z_sum)
-        # z = (np.exp(z))-np.max(z) / (np.sum(np.exp(z) - np.max(z)))
-        print(out)
 
         return np.round(out, 4)
